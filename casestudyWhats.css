@@ -1,0 +1,392 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ffffff;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #42AFB2;
+  width: 0%;
+}
+/**/
+
+li{
+    list-style-type: none;
+    margin:0;
+    padding: 17px;
+    font-size: 3vh;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+}
+a:hover{
+  color: #42AFB2;
+}
+#navbar{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+#mar-logo{
+  list-style-type: none;
+  margin: 0;
+  padding: 17px;
+  font-size: 3vh;
+
+}
+#mar-logo:hover{
+  transition: 1s ease;
+  display: block;
+  color: #888888;
+}
+
+.space-progressbar{
+  height: 10vh;
+  z-index: -99999;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;
+  }
+  
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
+
+  
+  }
+}
+.text-button {
+  background-color: black;
+  color: #FFF4EF;
+  padding: 20px 20px;
+  display: block;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.text-button:hover{
+  background-color: #FFF4EF;
+  color:black;
+}
+
+@media (max-width: 500px) {
+ 
+ button{
+   /*makes the button visible*/
+   display: block;
+   
+   /*since we are here, we can style it a little bit!*/
+   padding: 2vw;
+   font-size: 3vh;
+   background-color: #AFE0FF;
+   border: none;
+   
+   /*outline none removes the default blue border that appears anytime you click on the button*/
+   outline: none;
+   
+   cursor: pointer;
+ }
+}
+
+#img-first{
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.text-presentation{
+  text-align: center;
+}
+.text-subtitle{
+  width: 500px;
+  margin-bottom: 40px;
+}
+.text-mar{
+  font-size: larger;
+  margin: 0px;
+}
+h2{
+  font-size: 80px;
+  margin: 0px;
+}
+h3 {
+  font-size: 20px;
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
+}
+
+p{
+  font-size: 20px;
+  margin: 40px 0px 0px 0px;
+}
+
+.img-arrow{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 3%;
+
+}
+#index{
+  position: relative;
+  margin-bottom: 0px;
+  height: 100vh;
+  background-image: url("./img/img-index-header.png");
+  /*background-image: url(./img/ivan-bandura-2FEE6BR343k-unsplash.jpg);*/
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-arrow{
+  position: absolute;
+  bottom: 50px;
+  margin-top: 20px;
+}
+#quote{
+  text-align: center;
+  background-color: white;
+  padding: 60px;
+}
+.p-quote{
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.p-author{
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+#about{
+  position: relative;
+  background-color: #042338;
+  display: flex;
+}
+.about-title{
+  color: white;
+}
+.{
+  padding: 20px;
+}
+.img-me{
+  display: block;
+  padding: 20px;
+  width: 65%;
+}
+.line-title{
+  width: 100px;
+  height: 5px;
+  background: white;s
+  margin: 60px 79px;
+}
+.line-titleblack{
+  width: 100px;
+  height: 5px;
+  background: black;
+  margin: ;
+}
+.text-about{
+  color: white;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.a-resume{
+  background-color: white;
+  color: black;
+  padding: 20px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px auto;
+  margin-left: 0vh;
+  font-size: 20px;
+  font-weight: 700;
+}
+#skills{
+  background-color:#00506D;
+}
+.img-project{
+  width: 50vh;
+}
+.skills-title{
+  color: white;
+}
+.skill-art{
+  color: white;
+}
+.project-title{
+  background-color: white;
+}
+.yamiapp{
+  display: flex;
+}
+.funyoga{
+  display: flex;
+  background-color: #BECFD0;
+}
+.whatspoll{
+  display: flex;
+}
+
+.article-text{
+  height: 50%;
+}
+footer{
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 12vh;
+  align-items: center;
+  box-shadow: 5px 14px 10px 10px #888888;
+  background-color: white;
+}
+.get-in{
+  margin: 0px;
+}
+.coded{
+  margin: 0px 10px;
+}
+a{
+  padding: 0px;
+}
+.title-footer{
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rectangle-footer{
+  width: 100px;
+  height: 3px;
+  background: black;
+  margin-bottom: 10px;
+  
+}
+.about-art{
+  margin-right: -200px;
+}
+h4{
+  text-transform: uppercase;
+}
+h3{
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 51px;
+  margin-bottom: 20px;
+}
+.description-project{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.text-about p{
+  margin-top: 10px;
+}
+.medium-icon{
+cursor: pointer;
+}
+.linkedin-icon{
+cursor: pointer;
+}
+.medium-icon:hover{
+  background-color: blue;
+}
+
+.div-contact{
+  width: 2px;
+  height: 70px;
+  background-color: black;
+  margin: 10px 30px;
+}
+.contact-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+#contact h3{
+  font-size: xx-large;
+}
+.img-h3{
+  display: flex;
+}
+#contact img{
+  width: 10%;
+  margin: 10px;
+}
+.ubi{
+  display: flex;
+}
+.link {
+  text-decoration: none;
+  color: #1A1917;
+  /*font-family: 'Libre Baskerville', serif;*/
+  font-size: ;
+  box-shadow: inset 0 -0.6rem 0 #42AFB2;
+}
+.link:hover {
+  text-decoration: none;
+  color: #42AFB2;
+  /*font-family: 'Libre Baskerville', serif;*/
+  font-size: ;
+  box-shadow: inset 0 -0.6rem 0 #ffffff;
+}
+
+.titles{
+    padding: 20px;
+  }

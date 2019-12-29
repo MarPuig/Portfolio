@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="67px" viewBox="0 0 104 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Rectanglelogosvg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-365.000000, -67.000000)">
+            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="365" y="67" width="104" height="67"></rect>
+            <path d="M402,125 C416.359403,125 428,113.35774 428,98.996285 C428,89.9899326 417.866202,101.5 408.471687,103.882689 C401.651883,105.612365 402.553918,97.2042954 404.540655,92.6593821 C406.864698,87.3428384 416.81097,78 413.924321,78 C408.305956,78 391.629615,89.6292369 387.378103,92.6593821 C380.76361,97.3736748 376,90.2539972 376,98.996285 C376,113.35774 387.640597,125 402,125 Z" id="Oval" fill="#42AFB2"></path>
+            <text id="Mar" font-family="Monaco" font-size="40" font-weight="normal" fill="#000000">
+                <tspan x="391.994141" y="115">Mar</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
