@@ -32,6 +32,11 @@ body{
   background: #42AFB2;
   width: 0%;
 }
+/*#progress-wave{
+  width: 8px;
+  height: 8px;
+  background-color: red;
+}*/
 /**/
 
 li{
@@ -261,6 +266,9 @@ p{
 #skills{
   background-color:#00506D;
 }
+#skills p{
+  padding: 20px 0px;
+}
 .img-project{
   width: 50vh;
 }
@@ -269,6 +277,33 @@ p{
 }
 .skill-art{
   color: white;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+}
+ul{
+  list-style: none;
+}
+.skill-li{
+  width: 25%;
+}
+.hard-skills img {
+  width: 20vh;
+ 
+}
+.hard-skills{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0199A9;
+  padding: 30px;
+}
+.h4-skills{
+  text-align: center;
+}
+#sketch-img{
+  height: 137px;
 }
 .project-title{
   background-color: white;
@@ -323,6 +358,7 @@ a{
 }
 h4{
   text-transform: uppercase;
+  padding: 10px 0px;
 }
 h3{
   font-size: 90px;
@@ -347,7 +383,12 @@ cursor: pointer;
 .medium-icon:hover{
   background-color: blue;
 }
-
+#icon-ubi{
+  width: 5vh;
+}
+.p-ubi{
+  margin: 0px 10px;
+}
 .div-contact{
   width: 2px;
   height: 70px;
@@ -358,19 +399,34 @@ cursor: pointer;
   display: flex;
   justify-content: space-between;
   margin: 10px 30px;
+  align-items: flex-end;
 }
 #contact h3{
   font-size: xx-large;
 }
+#contact{
+  background-color: #FFF4EF;
+}
 .img-h3{
   display: flex;
+  justify-content: center;
 }
-#contact img{
+#linkedin-img{
+  align-items: baseline;
+}
+.contact-section a{
+  display: flex;
+  justify-content: center;
+}
+.contact-img{
   width: 10%;
   margin: 10px;
 }
 .ubi{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 .link {
   text-decoration: none;
@@ -398,3 +454,43 @@ cursor: pointer;
   /*-------------------*/
   /*-------------------*/
   /*CSS CASE STUDY WHATSAPP*/
+.img-whats{
+ width: 100%;
+ height: 90vh;
+}
+.index{
+  position: relative;
+  margin-bottom: 0px;
+  height: 100vh;
+  background-image: url(./img/apple-applications-apps-cell-phone-607812.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*CSS CASE STUDY WHATSAPP*/
+  /*-------------------*/
+  /*-------------------*/
+  /*-------------------*/
+  /*-------------------*/
+  /*-------------------*/
