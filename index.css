@@ -281,6 +281,8 @@ p{
   justify-content: space-around;
   flex-direction: column;
 }
+.css-logo{
+  height: 137px;
 }
 ul{
   list-style: none;
@@ -297,7 +299,7 @@ ul{
   justify-content: space-around;
   align-items: center;
   background-color: #0199A9;
-  padding: 30px;
+  padding: 50px;
 }
 .h4-skills{
   text-align: center;
@@ -318,7 +320,22 @@ ul{
 .whatspoll{
   display: flex;
 }
-
+.button-casestudy{
+  background-color: #00506D;
+  color: white;
+  padding: 20px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px auto;
+  margin-left: 0vh;
+  font-size: 20px;
+  font-weight: 500;
+}
+.button-casestudy:hover{
+  background-color: white;
+  color: #00506D;
+  box-shadow: 50px 140px 10px 10px #88888
+}
 .article-text{
   height: 50%;
 }
