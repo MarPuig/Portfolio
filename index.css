@@ -282,7 +282,7 @@ p{
   flex-direction: column;
 }
 .css-logo{
-  height: 137px;
+  height: 146,8px;
 }
 ul{
   list-style: none;
@@ -310,15 +310,24 @@ ul{
 .project-title{
   background-color: white;
 }
+.titles{
+  padding: 20px;
+}
+.title-project{
+  padding: 20px 20px 40px 20px;
+}
 .yamiapp{
   display: flex;
+  height: 80vh;
 }
 .funyoga{
   display: flex;
   background-color: #BECFD0;
+  height: 80vh;
 }
 .whatspoll{
   display: flex;
+  height: 80vh;
 }
 .button-casestudy{
   background-color: #00506D;
@@ -332,9 +341,8 @@ ul{
   font-weight: 500;
 }
 .button-casestudy:hover{
-  background-color: white;
-  color: #00506D;
-  box-shadow: 50px 140px 10px 10px #88888
+  background-color: rgb(0, 54, 73);
+  color: white;
 }
 .article-text{
   height: 50%;
@@ -383,10 +391,22 @@ h3{
   line-height: 51px;
   margin-bottom: 20px;
 }
+.h3-project{
+  font-weight: 600;
+  line-height: initial;
+}
+.line-vertical{
+  width: 2px;
+  height: 70px;
+  background-color: black;
+  margin: 10px 30px;
+
+}
 .description-project{
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  align-items: flex-end;
 }
 .text-about p{
   margin-top: 10px;
@@ -396,9 +416,6 @@ cursor: pointer;
 }
 .linkedin-icon{
 cursor: pointer;
-}
-.medium-icon:hover{
-  background-color: blue;
 }
 #icon-ubi{
   width: 5vh;
@@ -431,9 +448,25 @@ cursor: pointer;
 #linkedin-img{
   align-items: baseline;
 }
+/*
+*/
 .contact-section a{
   display: flex;
   justify-content: center;
+}
+.contact-section a:hover{
+  text-decoration: none;
+  color: #42AFB2;
+  /*font-family: 'Libre Baskerville', serif;*/
+  font-size: ;
+  box-shadow: inset 0 -0.6rem 0 #FFF4EF;
+} 
+
+.contact-section-a{
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  font-size: initial;
 }
 .contact-img{
   width: 10%;
@@ -460,9 +493,7 @@ cursor: pointer;
   box-shadow: inset 0 -0.6rem 0 #ffffff;
 }
 
-.titles{
-    padding: 20px;
-  }
+
 
 
   /*-------------------*/
@@ -488,16 +519,37 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*background: rgba(0, 255, 255, 0.1);*/}
+#intro{
+  background-color: #FFF4EF;
 }
+#overview{
 
-
-
-
-
-
-
-
-
+}
+#Whatsapp{
+background-color: #42AFB2;
+background: rgba(255, 0, 161, .8) fixed, url(http://www.webcreatorbox.com/sample/images/bg-cherrybrossam.jpg) fixed;
+background-size: cover;
+background: ;
+}
+}
+#obj{}
+#research{
+background-color: #0199A9;
+}
+#problem{}
+#insights{
+background-color: #00506D ;
+}
+#persona{}
+#testing-1{
+  background-color: #01314E;
+}
+#testing-2{}
+#nextsteps{
+  background-color: #042338;
+}
+#next-project{}
 
 
 
