@@ -270,6 +270,13 @@ p{
   padding: 20px 0px;
 }
 .img-project{
+  height: 100%; 
+  object-fit: contain; 
+}
+.img-yogui{
+  position: absolute;
+  margin-left: 90vh;
+  margin-top: 10vh;
   width: 50vh;
 }
 .skills-title{
@@ -324,10 +331,19 @@ ul{
   display: flex;
   background-color: #BECFD0;
   height: 80vh;
+  align-items: center;
+}
+.funyoga:hover{
+  background-color: rgb(101, 138, 139);
 }
 .whatspoll{
   display: flex;
   height: 80vh;
+}
+.img-class{
+  width:auto; 
+  text-align:center; 
+  padding:20px;
 }
 .button-casestudy{
   background-color: #00506D;
@@ -336,13 +352,21 @@ ul{
   display: inline-block;
   border-radius: 10px;
   margin: 20px auto;
-  margin-left: 0vh;
   font-size: 20px;
   font-weight: 500;
 }
 .button-casestudy:hover{
   background-color: rgb(0, 54, 73);
   color: white;
+}
+.info-project{
+  display: flex;
+  flex-direction: column;
+
+}
+.info-casestudy{
+  display: flex;
+  flex-direction: column;
 }
 .article-text{
   height: 50%;
@@ -563,3 +587,83 @@ background-color: #00506D ;
   /*-------------------*/
   /*-------------------*/
   /*-------------------*/
+
+
+
+
+.yamiapp-prova{
+  background: #0caca3;
+  
+  height: 70vh;
+  margin: 4rem auto;
+  display: flex;
+  color: black;
+}
+.whatspoll-prova{
+  background: #20D499;
+  
+  height: 70vh;
+  margin: 4rem auto;
+  display: flex;
+  color: black;
+}
+.funyoga-prova{
+  background: #0086FF;
+
+  height: 70vh;
+  margin: 4rem auto;
+  display: flex;
+  color: black;
+}
+.img-yami{
+  height: 80vh;
+  margin-top: -5vh;
+  margin: auto;
+}
+.img-whatss{
+  height: 60vh;
+  margin-top: -5vh;
+  margin: auto;
+}
+.img-yoga{
+  height: 30vh;
+  margin-top: -5vh;
+  margin: auto;
+  position: absolute;
+  margin-left: 85vh;
+}
+.info-yami{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* text-align: right; */
+    /* width: 50%; */
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    padding-top: 5%;
+}
+.info-whats{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* text-align: right; */
+    /* width: 50%; */
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+.info-yoga{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* text-align: right; */
+    /* width: 50%; */
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    width: ;
+}
