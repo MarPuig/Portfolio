@@ -192,6 +192,8 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
+  background-position: center;
 }
 .img-arrow{
   position: absolute;
@@ -592,31 +594,40 @@ background-color: #00506D ;
 
 
 .yamiapp-prova{
-  background: #0caca3;
-  
+  background: #BECFD0;
+  width: 90%;
   height: 70vh;
   margin: 4rem auto;
   display: flex;
   color: black;
+  -webkit-box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
+  -moz-box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
+  box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
 }
 .whatspoll-prova{
-  background: #20D499;
-  
+  background: #BECFD0;
+  width: 90%;
   height: 70vh;
   margin: 4rem auto;
   display: flex;
   color: black;
+  -webkit-box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
+  -moz-box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
+  box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
 }
 .funyoga-prova{
-  background: #0086FF;
-
+  background: #BECFD0;
+  width: 90%;
   height: 70vh;
   margin: 4rem auto;
   display: flex;
   color: black;
+  -webkit-box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
+  -moz-box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
+  box-shadow: -2px 7px 25px -7px rgba(0,0,0,0.68);
 }
 .img-yami{
-  height: 80vh;
+  height: 60vh;
   margin-top: -5vh;
   margin: auto;
 }
