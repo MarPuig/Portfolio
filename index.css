@@ -3,13 +3,18 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+header{
+  font-family: 'Montserrat', sans-serif;
+}
 body{
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
-
+h1,h2,h3,h4{
+  font-family: 'Poppins', sans-serif;
+}
 /* Style the header: fixed position (always stay at the top) */
 .header {
   position: fixed;
@@ -100,7 +105,6 @@ ul{
   a{
     display: block;
 
-  
   }
 }
 .text-button {
@@ -210,6 +214,7 @@ p{
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -1px;
+  font-family: 'Montserrat', sans-serif;
 }
 .p-author{
   margin-top: 10px;
@@ -220,24 +225,25 @@ p{
 #about{
   position: relative;
   background-color: #042338;
-  display: flex;
+  
 }
 .about-title{
   color: white;
 }
-.{
-  padding: 20px;
+.content-about{
+  align-content: flex-start;
+  display: flex;
 }
 .img-me{
-  display: block;
+  width: 35%;
+  height: auto;
   padding: 20px;
-  width: 65%;
+  align-self: flex-start;
 }
 .line-title{
   width: 100px;
   height: 5px;
-  background: white;s
-  margin: 60px 79px;
+  background: white;
 }
 .line-titleblack{
   width: 100px;
@@ -251,7 +257,6 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
 }
 .a-resume{
@@ -323,7 +328,7 @@ ul{
   padding: 20px;
 }
 .title-project{
-  padding: 20px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
 }
 .yamiapp{
   display: flex;
