@@ -356,6 +356,9 @@ cursor: pointer;
 .linkedin-icon{
 cursor: pointer;
 }
+.linkedin-img{
+  align-items: baseline;
+}
 .medium-icon:hover{
   background-color: blue;
 }
