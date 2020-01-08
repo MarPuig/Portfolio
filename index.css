@@ -14,6 +14,9 @@ body{
 }
 
 
+
+
+
 h1,h2,h3,h4{
   font-family: 'Poppins', sans-serif;
 }
@@ -75,12 +78,27 @@ a:hover{
   margin: 0;
   padding: 17px;
   font-size: 3vh;
-
+}
+@media (max-width: 768px){
+  #navbar{
+    flex-direction: column;
+    height: 20vh;
+  }
+  #mar-logo{
+    padding-bottom: 0px;
+  }
+  .nav-list li{
+    padding-top: 0px;
+  }
+}
+.text-mar{
+  margin-top: 20vh;
 }
 #mar-logo:hover{
   transition: 1s ease;
   display: block;
   color: #888888;
+ }
 }
 
 .space-progressbar{
@@ -88,9 +106,20 @@ a:hover{
   z-index: -99999;
 }
 ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+@media(max-width: 768px){
+  .space-progressbar{
+    height: 20vh;
+  }
+  .mar-skill ul{
+    display: block;
+  }
+  .skill1{
+    margin-bottom: 10vh;
+  }
 }
 
 .text-button {
@@ -145,6 +174,15 @@ ul{
   font-size: larger;
   margin: 0px;
 }
+
+@media (max-width: 768px){
+.text-mar{
+  margin-top: 20vh;
+ }
+ .text-presentation{
+   width: 90%;
+ }
+}
 h2{
   font-size: 80px;
   margin: 0px;
@@ -166,7 +204,9 @@ p{
   margin-right: auto;
   margin-bottom: 0px;
   width: 3%;
-
+  position: absolute;
+  bottom: 2vh;
+  margin-top: 20px;
 }
 #index{
   position: relative;
@@ -185,11 +225,7 @@ p{
   background-attachment: fixed;
   background-position: center;
 }
-.img-arrow{
-  position: absolute;
-  bottom: 50px;
-  margin-top: 20px;
-}
+
 #quote{
   text-align: center;
   background-color: white;
@@ -220,11 +256,27 @@ p{
   align-content: flex-start;
   display: flex;
 }
+
+@media (max-width: 768px){
+  .content-about{
+    flex-direction: column;
+   }
+}
+
+
 .img-me{
   width: 35%;
   height: auto;
   padding: 20px;
   align-self: flex-start;
+}
+@media(max-width:768px){
+  .img-me{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px 0px 20px;
+    width: 70%;
+  }
 }
 .line-title{
   width: 100px;
@@ -243,7 +295,6 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .a-resume{
   background-color: white;
@@ -255,6 +306,17 @@ p{
   margin-left: 0vh;
   font-size: 20px;
   font-weight: 700;
+}
+@media(max-width:768px){
+  .text-about{
+    margin-top: 0px;
+  }
+  .text-about p{
+    text-align: center;
+  }
+  .a-resume{
+    margin: 30px auto 0px auto;
+  }
 }
 #skills{
   background-color:#00506D;
@@ -290,9 +352,22 @@ ul{
 .skill-li{
   width: 25%;
 }
+@media(max-width:768px){
+  .skill-li{
+    width: 90%;
+ }
+}
 .hard-skills img {
   width: 10vh;
  
+}
+.skills-ordercolumn{
+  display: contents;
+}
+@media(max-width:768px){
+  .skills-ordercolumn{
+    display: block;
+  }
 }
 .hard-skills{
   display: flex;
@@ -383,20 +458,36 @@ footer{
   box-shadow: 5px 14px 10px 10px #888888;
   background-color: white;
 }
+.title-footer{
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .get-in{
   margin: 0px;
 }
 .coded{
   margin: 0px 10px;
 }
+@media(max-width:768px){
+  footer{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .title-footer{
+    margin: 10px 0 20px 0;
+  }
+  .links.art{
+    margin: 10px;
+  }
+  .coded{
+    margin: 20px;
+  }
+}
 a{
   padding: 0px;
-}
-.title-footer{
-  margin: 0px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .rectangle-footer{
   width: 100px;
@@ -463,6 +554,17 @@ cursor: pointer;
   justify-content: space-between;
   margin: 10px 30px;
   align-items: flex-end;
+}
+@media(max-width:768px){
+  .div-contact{
+    display: none;
+  }
+  .contact-section{
+    flex-direction: column;
+  }
+  .contact-section-article{
+    margin: 20px;
+  }
 }
 #contact h3{
   font-size: xx-large;
