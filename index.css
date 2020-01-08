@@ -12,6 +12,8 @@ body{
   font-family: 'Poppins', sans-serif;
   font-family: 'Lato', sans-serif;
 }
+
+
 h1,h2,h3,h4{
   font-family: 'Poppins', sans-serif;
 }
@@ -91,22 +93,6 @@ ul{
   display: flex;
 }
 
-@media (max-width: 500px) {
-  /*shows elements in a column*/
-  ul{
-    flex-direction: column;
-  }
-  
-  /* deletes margin on top or bottom of the a tag*/
-  li{
-    margin: 0;
-  }
- /* makes sure that the a tag will take the entire screen*/
-  a{
-    display: block;
-
-  }
-}
 .text-button {
   background-color: black;
   color: #FFF4EF;
