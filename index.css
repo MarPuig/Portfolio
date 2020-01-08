@@ -488,7 +488,7 @@ cursor: pointer;
   display: flex;
   justify-content: center;
 }
-#linkedin-img{
+.linkedin-img{
   align-items: baseline;
 }
 /*
