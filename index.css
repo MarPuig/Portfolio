@@ -998,8 +998,11 @@ background-color: #00506D ;
     font-size: 60px;
   }
 }
-@media(max-width:353px){
+@media(max-width:370px){
   .text-Iam{
     font-size: 60px;
+  }
+  .img-arrow{
+    display: none;
   }
 }
