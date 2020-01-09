@@ -670,16 +670,38 @@ cursor: pointer;
   position: relative;
   margin-bottom: 0px;
   height: 100vh;
-  background-image: url(./img/apple-applications-apps-cell-phone-607812.jpg);
+  /*background-image: url(./img/whatsmockup.png);
+  background-color: #075E54;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-size: cover;
+  background-size: 40%;*/
+  background-color: #075E54;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   /*background: rgba(0, 255, 255, 0.1);*/}
+  .img-index-whats{
+    width: 40%;
+    position: absolute;
+    margin-left: 45vh;
+    margin-top: 5vh;
+  }
+.index-title-img{
+  display: contents;
+}
+.h1-whats{
+  margin-left: auto;
+  left: 1px;
+  position: absolute;
+  top: 33%;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 23vh;
+  color: white;
+}
 #intro{
   background-color: #FFF4EF;
 }
@@ -717,8 +739,8 @@ background-color: #00506D ;
 }
 #intro-whats{
   display: flex;
-  background-color: #FFF4EF;
   flex-direction: column;
+  background-color: white;
 }
 .h3-intro-whats{
   font-size: 50px;
@@ -726,6 +748,7 @@ background-color: #00506D ;
 .p-overview{
   margin: 40px;
 }
+
 
 
   /*CSS CASE STUDY WHATSAPP*/
