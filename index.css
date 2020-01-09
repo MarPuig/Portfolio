@@ -998,3 +998,8 @@ background-color: #00506D ;
     font-size: 60px;
   }
 }
+@media(max-width:353px){
+  .text-Iam{
+    font-size: 60px;
+  }
+}
