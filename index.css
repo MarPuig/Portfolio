@@ -140,7 +140,10 @@ ul{
   }
 }
 
-
+.space-progressbar-new{
+  height: 10vh;
+  z-index: -99999;
+}
 @media (max-width: 500px) {
  
  button{
@@ -917,7 +920,7 @@ background-color: #00506D ;
     width: 95%;
     height: 100vh;
     position: relative;
-  margin-bottom: 0px;
+  margin-bottom: 64px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
