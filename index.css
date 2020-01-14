@@ -256,6 +256,13 @@ p{
 #about{
   position: relative;
   background-color: #042338;
+   background-image: url(./img/backgroundocean-about.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   
 }
 .about-title{
