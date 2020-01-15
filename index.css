@@ -661,7 +661,7 @@ h3{
   font-size: 90px;
   font-weight: bold;
   line-height: 51px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .mar-skill h3{
   color: #042338;
@@ -711,6 +711,11 @@ cursor: pointer;
   justify-content: space-between;
   margin: 10px 30px;
   align-items: flex-end;
+}
+@media(max-width:1068px){
+.h3-project{
+	font-size:60px;
+	}
 }
 @media(max-width:768px){
   .div-contact{
