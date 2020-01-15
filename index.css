@@ -91,9 +91,7 @@ a:hover{
     padding-top: 0px;
   }
 }
-.text-mar{
-  margin-top: 20vh;
-}
+
 #mar-logo:hover{
   transition: 1s ease;
   display: block;
@@ -131,6 +129,7 @@ ul{
   }
   .mar-skill ul{
     display: block;
+    color: #042338;
   }
   .skill1{
     margin-bottom: 10vh;
@@ -173,8 +172,8 @@ ul{
   text-align: center;
 }
 .text-subtitle{
-  width: 500px;
-  margin-bottom: 40px;
+  margin: 3vh 1vh 6vh 1vh;
+  width: 78%;
 }
 .text-mar{
   font-size: larger;
@@ -182,16 +181,36 @@ ul{
 }
 
 @media (max-width: 768px){
-.text-mar{
-  margin-top: 20vh;
- }
+
  .text-presentation{
    width: 90%;
+   
+ }
+ .content-index{
+  margin-top: 9vh;
  }
  .text-Iam{
   font-size: 70px;
  }
 }
+@media(max-width:370px){
+  .text-Iam{
+    font-size: 60px;
+  }
+  .img-arrow{
+    display: none;
+  }
+}
+@media (max-width: 300px){
+ .text-Iam{
+  font-size: 50px;
+ }
+ .text-subtitle .text-mar{
+   font-size: 15px;
+ }
+}
+
+
 h2{
   font-size: 80px;
   margin: 0px;
@@ -208,7 +227,7 @@ p{
 }
 
 .img-arrow{
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
@@ -219,6 +238,7 @@ p{
 }
 #index{
   position: relative;
+  -webkit-clip-path:  polygon(0 0, 100% 0, 101% 88vh, 0 100%);;
   margin-bottom: 0px;
   height: 100vh;
   background-image: url("./img/img-index-header.png");
@@ -234,11 +254,49 @@ p{
   background-attachment: fixed;
   background-position: center;
 }
+.content-index{
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
+  justify-content: center;
+  align-items: center;
+}
+.video-index{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  -webkit-animation: aparece 1.5s ease 0.5s both;
+  animation: aparece 1.5s ease 0.5s both;
+  z-index: -1;
+}
+.myVideo{
+  argin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.morado{
+  width: 100%;
+    height: 100vh;
+    background-color: rgba(41, 78, 112, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-animation: aparece 3s ease 0.5s both;
+    animation: aparece 3s ease 0.5s both;
+}
 
 #quote{
   text-align: center;
   background-color: white;
-  padding: 60px;
+  padding: 13vh;
+}
+@media (max-width: 768px){
+  #quote{
+    padding: 6vh;
+  }
 }
 .p-quote{
   margin-top: 0px;
@@ -255,11 +313,75 @@ p{
 }
 #about{
   position: relative;
-  background-color: #042338;
-  
+  -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 106%, 0% 100%);
+  background-image: url(./img/backgroundocean-about.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+#about::before::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+  left: 0;
+  background-image: url(./img/backgroundocean-about.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+	transform-origin: top left;
+	transform: skewY(-3deg);
+	z-index: -10;
+}
+
+#about::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+  background-image: url(./img/backgroundocean-about.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+	transform-origin: bottom left;
+	transform: skewY(3deg);
+	z-index: -10;
+}
+.about-text{
+  z-index: 90;
+}
+.img-opacity{
+
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
 }
 .about-title{
   color: white;
+}
+.title-div{
+  padding-left: 0vh;
+  padding-top: 12vh;
+  width: 95%;
+  margin-left: auto;
 }
 .content-about{
   align-content: flex-start;
@@ -275,6 +397,7 @@ p{
 
 .img-me{
   width: 35%;
+  z-index: 90;
   height: auto;
   padding:40px 20px 0px 40px;
   align-self: flex-start;
@@ -284,13 +407,19 @@ p{
     margin-left: auto;
     margin-right: auto;
     padding: 30px 20px 0px 20px;
-    width: 70%;
+    width: 60%;
+    margin-bottom: -4vh;
   }
 }
 .line-title{
   width: 100px;
   height: 5px;
   background: white;
+}
+.line-title-skills{
+  width: 100px;
+  height: 5px;
+  background: #042338;
 }
 .line-titleblack{
   width: 100px;
@@ -300,6 +429,7 @@ p{
 }
 .text-about{
   color: white;
+  z-index: 90;
   margin: 50px;
   display: flex;
   flex-direction: column;
@@ -328,11 +458,18 @@ p{
   }
 }
 #skills{
-  background-color:#00506D;
+  background-color: aliceblue;
+  background-image: linear-gradient(white, aliceblue);
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+
+  
 }
 #skills p{
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
+
 .img-project{
   height: 100%; 
   object-fit: contain; 
@@ -344,10 +481,10 @@ p{
   width: 50vh;
 }
 .skills-title{
-  color: white;
+  color: #042338;
 }
 .skill-art{
-  color: white;
+  color: black;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
@@ -382,7 +519,6 @@ ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #0199A9;
   padding: 50px;
 }
 .h4-skills{
@@ -391,15 +527,20 @@ ul{
 #sketch-img{
   height: 82.09px;
 }
-.project-title{
-  background-color: white;
-}
+
 .titles{
   padding: 20px;
+  margin-top: 4vh;
 }
 .title-project{
   padding: 0px 20px 0px 20px;
+  margin-top: 4vh;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+  
 .yamiapp{
   display: flex;
   height: 80vh;
@@ -441,7 +582,6 @@ ul{
 .info-project{
   display: flex;
   flex-direction: column;
-
 }
 .info-project p{
   margin: 30px;
@@ -458,6 +598,11 @@ ul{
 .article-text{
   height: 50%;
 }
+.title-contact{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
 footer{
   display:flex;
   justify-content: space-between;
@@ -472,6 +617,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px 0 20px 0;
 }
 .get-in{
   margin: 0px;
@@ -485,9 +631,7 @@ footer{
     height: auto;
     padding: 20px;
   }
-  .title-footer{
-    margin: 10px 0 20px 0;
-  }
+  
   .links.art{
     margin: 10px;
   }
@@ -511,12 +655,16 @@ a{
 h4{
   text-transform: uppercase;
   padding: 10px 0px;
+  color: #042338;
 }
 h3{
   font-size: 90px;
   font-weight: bold;
   line-height: 51px;
   margin-bottom: 20px;
+}
+.mar-skill h3{
+  color: #042338;
 }
 .h3-project{
   font-weight: 600;
@@ -781,7 +929,7 @@ background-color: #00506D ;
 
 
 .yamiapp-prova{
-  /*background: #BECFD0;*/
+  background: #ffffff;
   width: 90%;
   height: 70vh;
   margin: 4rem auto;
@@ -804,7 +952,7 @@ background-color: #00506D ;
   background-position: center;
 }
 .whatspoll-prova{
-  /*background: #BECFD0;*/
+  background: #ffffff;
   width: 90%;
   height: 70vh;
   margin: 4rem auto;
@@ -830,7 +978,7 @@ background-color: #00506D ;
   
 }
 .funyoga-prova{
-  /*background: #BECFD0;*/
+  background: #ffffff;
   width: 90%;
   height: 70vh;
   margin: 4rem auto;
@@ -1009,6 +1157,7 @@ background-color: #00506D ;
   .info-casestudy{
     margin: auto;
     margin-top: 73px;
+    position: relative;
   }
   .info-casestudy p{
     text-align: center;
@@ -1038,13 +1187,5 @@ background-color: #00506D ;
   }
   .contact-title{
     font-size: 60px;
-  }
-}
-@media(max-width:370px){
-  .text-Iam{
-    font-size: 60px;
-  }
-  .img-arrow{
-    display: none;
   }
 }
