@@ -720,6 +720,11 @@ cursor: pointer;
   margin: 10px 30px;
   align-items: flex-end;
 }
+@media(max-width:1068px){
+.h3-project{
+	font-size:60px;
+	}
+}
 @media(max-width:768px){
   .div-contact{
     display: none;
