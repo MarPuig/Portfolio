@@ -11,6 +11,7 @@ body{
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-family: 'Lato', sans-serif;
+  background-color: white;
 }
 
 
@@ -313,7 +314,7 @@ p{
 }
 #about{
   position: relative;
-  -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 106%, 0% 100%);
+  -webkit-clip-path: polygon(0 12vh, 100% 0, 100% 106%, 0 100%);;
   background-image: url(./img/backgroundocean-about.png);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -469,7 +470,9 @@ p{
 #skills p{
   padding: 10px 0px;
 }
-
+#projects{
+  background-color: white;
+}
 .img-project{
   height: 100%; 
   object-fit: contain; 
@@ -661,7 +664,7 @@ h3{
   font-size: 90px;
   font-weight: bold;
   line-height: 51px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .mar-skill h3{
   color: #042338;
@@ -671,6 +674,11 @@ h3{
   line-height: initial;
   font-size: 70px;
 }
+@media(max-width:1068px){
+  .h3-project{
+    font-size:60px;
+    }
+  }
 .line-vertical{
   width: 2px;
   height: 70px;
