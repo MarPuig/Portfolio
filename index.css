@@ -79,6 +79,7 @@ a:hover{
   margin: 0;
   padding: 17px;
   font-size: 3vh;
+   width: 50%;
 }
 @media (max-width: 768px){
   #navbar{
