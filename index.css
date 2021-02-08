@@ -79,7 +79,7 @@ a:hover{
   margin: 0;
   padding: 17px;
   font-size: 3vh;
-   width: 50%;
+   width: 50pt;
 }
 @media (max-width: 768px){
   #navbar{
@@ -88,6 +88,7 @@ a:hover{
   }
   #mar-logo{
     padding-bottom: 0px;
+	  width: 40pt;
   }
   .nav-list li{
     padding-top: 0px;
